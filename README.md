@@ -41,7 +41,7 @@ python main.py --csv data/sample.csv --limit 10
 
 ---
 
-# 예시(CSV)
+#### 예시(CSV)
 
 ```csv
 id,name,age
@@ -50,7 +50,7 @@ id,name,age
 3,Park,28
 ```
 
-# 실행 결과(json)
+#### 실행 결과(json)
 ```json
 [
   {
