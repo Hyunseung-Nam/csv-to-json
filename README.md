@@ -8,6 +8,7 @@ CSV 데이터를 JSON 형식으로 변환하는 간단한 커맨드라인 도구
 - CSV 파일을 JSON 형식으로 변환
 - 출력 제한 옵션 (`--limit`)
 - 파일 저장 또는 stdout 출력 지원
+- 실행 과정 및 오류 메시지를 로깅 (logging 모듈 사용)
 
 ---
 
@@ -15,6 +16,7 @@ CSV 데이터를 JSON 형식으로 변환하는 간단한 커맨드라인 도구
 
 - Python 3.13
 - pandas
+- logging
 
 ---
 
@@ -29,14 +31,9 @@ cd csv-to-json
 pip install -r requirements.txt
 
 3. 실행
-# 결과를 화면에 출력
-python main.py --csv data/sample.csv
-
-# 결과를 파일로 저장
-python main.py --csv data/sample.csv --out data/sample.json
-
-# 앞에서 10행만 출력
-python main.py --csv data/sample.csv --limit 10
+python main.py --csv data/sample.csv                         # 결과를 화면에 출력
+python main.py --csv data/sample.csv --out data/sample.json  # 결과를 파일로 저장
+python main.py --csv data/sample.csv --limit 10              # 앞에서 10행만 출력
 ```
 
 ---
@@ -62,6 +59,11 @@ id,name,age
     "id": 2,
     "name": "Lee",
     "age": 30
+  },
+  {
+    "id": 3,
+    "name": "Park",
+    "age": 28
   }
 ]
 ```
