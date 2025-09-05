@@ -27,10 +27,15 @@ CSV 데이터를 JSON 형식으로 변환하는 간단한 커맨드라인 도구
 git clone https://github.com/Hyunseung-Nam/csv-to-json.git
 cd csv-to-json
 
-2. 라이브러리 설치
+2. 가상환경 설정(선택사항이지만 권장)
+python -m venv .venv
+source .venv/bin/activate    # Mac/Linux
+.venv/Scripts/activate       # Windows
+
+3. 라이브러리 설치
 pip install -r requirements.txt
 
-3. 실행
+4. 실행
 python main.py --csv data/sample.csv                         # 결과를 화면에 출력
 python main.py --csv data/sample.csv --out data/sample.json  # 결과를 파일로 저장
 python main.py --csv data/sample.csv --limit 10              # 앞에서 10행만 출력
