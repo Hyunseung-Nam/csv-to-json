@@ -24,8 +24,8 @@ CSV 데이터를 JSON 형식으로 변환하는 간단한 커맨드라인 도구
 
 ```bash
 1. 레포지토리 복사
-git clone https://github.com/Hyunseung-Nam/csv-to-json.git
-cd csv-to-json
+git clone https://github.com/Hyunseung-Nam/csv_to_json.git
+cd csv_to_json
 
 2. 가상환경 설정(선택사항이지만 권장)
 python -m venv .venv
